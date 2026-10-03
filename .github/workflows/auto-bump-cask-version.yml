@@ -1,0 +1,28 @@
+name: Bump gokfre cask
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: bump-cask
+  cancel-in-progress: true
+
+jobs:
+  bump:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ensure Rosetta 2 is available (for the Intel install test)
+        run: arch -x86_64 /usr/bin/true || softwareupdate --install-rosetta --agree-to-license
+
+      - name: Check for new gokfre release and bump cask
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./scripts/bump-cask.sh gokfre https://github.com/adrinand/gokfre
