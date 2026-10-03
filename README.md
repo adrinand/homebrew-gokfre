@@ -1,4 +1,4 @@
-#homebrew-gokfre
+# homebrew-gokfre
 Gokfre release version for HomeBrew Cask
 
 Usage
