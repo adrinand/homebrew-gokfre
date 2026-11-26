@@ -1,14 +1,14 @@
 cask "gokfre" do
   on_arm do
     version "1.0.0"
-    sha256 "aaead6fedc4a19917c1c987d4ae58d26d3957ca36145d5fb7465a3cc9924f958"
+    sha256 "52421dc6ed46c11ec65e6e4c6439eb9d4d8d26a264ac3e8283c94e71c8d4a2c2"
 
     url "https://github.com/adrinand/gokfre/releases/download/v#{version}/Gokfre-#{version}-arm64.dmg"
   end
 
   on_intel do
     version "1.0.0"
-    sha256 "82cb4ad9d4df91298dc566e62e7a99a15356c36131438d62b649168e5b0d779d"
+    sha256 "2de33f39b31c1e88d2676c197f15f942d9c6929b05a30762a1d0c7eb0e894493"
 
     url "https://github.com/adrinand/gokfre/releases/download/v#{version}/Gokfre-#{version}-x86_64.dmg"
   end
