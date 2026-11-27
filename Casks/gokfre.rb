@@ -3,7 +3,7 @@ cask "gokfre" do
     version "1.0.1"
     sha256 "0237debeba86bdb5ecd01c60a4ccbc757fddbb295ab2f9ec503110d0cacdfde4"
 
-    url "https://github.com/adrinand/gokfre/releases/download/v#{version}/Gokfre-#{version}-rc-arm64.dmg"
+    url "https://github.com/adrinand/gokfre/releases/download/v#{version}-rc/Gokfre-#{version}-rc-arm64.dmg"
   end
 
   on_intel do
