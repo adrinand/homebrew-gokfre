@@ -1,6 +1,6 @@
 cask "gokfre" do
   on_arm do
-    version "1.0.0"
+    version "1.0.1"
     sha256 "0237debeba86bdb5ecd01c60a4ccbc757fddbb295ab2f9ec503110d0cacdfde4"
 
     url "https://github.com/adrinand/gokfre/releases/download/v#{version}/Gokfre-#{version}-arm64.dmg"
